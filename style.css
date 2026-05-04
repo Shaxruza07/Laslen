@@ -281,9 +281,68 @@ header {
     }
 }
 
+h2 {
+    margin-right: 170px;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin-right: 110px;
+    margin-bottom: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: #fff;
+  width: 350px;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content input {
+  width: 290px;
+  padding: 10px;
+  margin: 8px 0;
+  margin-top: 7px;
+}
+
+.create-btn {
+  width: 290px;
+  background: #4caf4f;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
 /* Main */
 /* main-one */
-h2 {
+h3 {
     color: #4D4D4D;
     font-size: 32px;
     font-weight: 600;
