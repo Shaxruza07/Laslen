@@ -281,8 +281,8 @@ header {
     }
 }
 
-h2 {
-    margin-right: 170px;
+.modal h2 {
+    margin-right: 200px;
     margin-bottom: 10px;
 }
 

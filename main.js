@@ -4,6 +4,11 @@ let closeBtn = document.querySelector(".close-btn");
 const modal = document.getElementById("modal");
 const btn = document.getElementById("openModal");
 const close = document.querySelector(".close");
+const modallogin = document.getElementById("modallogin");
+const loginbtn = document.getElementById("loginbtn");
+const loginclose = document.querySelector("loginclose");
+
+
 
 btn.onclick = () => {
   modal.style.display = "block";
@@ -16,6 +21,21 @@ close.onclick = () => {
 window.onclick = (e) => {
   if (e.target == modal) {
     modal.style.display = "none";
+  }
+};
+
+
+loginbtn.onclick = () => {
+  modallogin.style.display = "block";
+};
+
+loginclose.onclick = () => {
+  modallogin.style.display = "none";
+};
+
+window.onclick = (e) => {
+  if (e.target == modallogin) {
+    modallogin.style.display = "none";
   }
 };
 
