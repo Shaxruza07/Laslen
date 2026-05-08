@@ -3,10 +3,11 @@ let menu = document.querySelector(".menu");
 let closeBtn = document.querySelector(".close-btn");
 const modal = document.getElementById("modal");
 const btn = document.getElementById("openModal");
-const close = document.querySelector(".close");
+const signupclose = document.getElementById("signupclose");
 const modallogin = document.getElementById("modallogin");
 const loginbtn = document.getElementById("loginbtn");
-const loginclose = document.querySelector("loginclose");
+const loginclose = document.getElementById("loginclose");
+const goSignup = document.getElementById("goSignup");
 
 
 
@@ -14,7 +15,7 @@ btn.onclick = () => {
   modal.style.display = "block";
 };
 
-close.onclick = () => {
+signupclose.onclick = () => {
   modal.style.display = "none";
 };
 
@@ -24,6 +25,12 @@ window.onclick = (e) => {
   }
 };
 
+goSignup.onclick = (e) => {
+  e.preventDefault();
+
+  modallogin.style.display = "none";
+  modal.style.display = "block";
+};
 
 loginbtn.onclick = () => {
   modallogin.style.display = "block";
@@ -38,6 +45,14 @@ window.onclick = (e) => {
     modallogin.style.display = "none";
   }
 };
+
+// bars.addEventListener("click", function () {
+//     menu.classList.add("show-menu");
+// });
+
+closeBtn.addEventListener("click", function () {
+    menu.classList.remove("show-menu");
+});
 
 bars.addEventListener("click", function () {
     menu.classList.add("show-menu");
